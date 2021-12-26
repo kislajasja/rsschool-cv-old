@@ -25,9 +25,13 @@ Cosmetic production
 
 ## Skills
 HTML-basics
+
 CSS-basics
+
 CSS-positioning
+
 JavaScript-basics
+
 JavaScript-functions
 
 ## Languages
@@ -35,5 +39,7 @@ English Level A2
 
 ## Soft skills
 Sociability
+
 Purposefulness
+
 Positive thinking
