@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CV Halakova Kseniya</title>
+  </head>
+  <body>
+    <button
+      onclick="topFunction()"
+      id="top_button"
+      title="Go to top"
+      style="display: block"
+    >
+      ^
+    </button>
+    <div class="wrapper">
+      <nav class="header">
+        <div class="header_container">
+          <div class="header_menu menu">
+            <div class="menu_icon">
+              <span></span>
+            </div>
+            <nav class="menu_body">
+              <ul class="menu_list">
+                <li><a href="#contacts" class="menu_link">Contacts</a></li>
+                <li><a href="#summary" class="menu_link">Summary</a></li>
+                <li><a href="#skills" class="menu_link">Skills</a></li>
+                <li><a href="#education" class="menu_link">Education</a></li>
+                <li>
+                  <a href="#my_projects" class="menu_link">My Projects</a>
+                </li>
+                <li>
+                  <a href="#code_experience" class="menu_link"
+                    >Code Experience</a
+                  >
+                </li>
+                <li><a href="#languages" class="menu_link">Languages</a></li>
+                <li>
+                  <a href="#soft_skills" class="menu_link">Soft Skills</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </nav>
+      <main class="page">
+        <header>
+          <section class="page_header_section">
+            <h1 class="page_title">Halakova Kseniya</h1>
+            <div class="page_text">
+              <h2>Junior Software Developer</h2>
+            </div>
+            <figure class="contacts_photo">
+              <img src="assets/photo.jpg" class="photo" alt="My photo" />
+            </figure>
+          </section>
+          <section class="page_section" id="contacts">
+            <h2 class="page_sub-title">Contacts</h2>
+            <div class="page_text">
+              <ul>
+                <li><b>Minsk, Belarus</b></li>
+                <li><b>phone</b> +375 44 726 64 48</li>
+                <li><b>telegram, skype, github</b> @kislajasja</li>
+                <li>
+                  <b>e-mail</b>
+                  <a href="mailto:kislajasja@gmail.com">kislajasja@gmail.com</a>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </header>
+        <section class="page_section" id="summary">
+          <h2 class="page_sub-title">Summary</h2>
+          <details class="page_text">
+            <summary>
+              I am new in software development yet, but I really want to become
+              a software engineer. I started learning JavaScript just last year and I
+              really like. I was a chemist in the past, but I realized that I
+              want to try myself in IT.
+            </summary>
+          </details>
+        </section>
+        <section class="page_section" id="skills">
+          <h2 class="page_sub-title">Skills</h2>
+          <div class="page_text">
+            <ul>
+              <li><b>HTML</b></li>
+              <li><b>CSS</b></li>
+              <li><b>JavaScript</b></li>
+            </ul>
+          </div>
+        </section>
+        <section class="page_section" id="education">
+          <h2 class="page_sub-title">Education</h2>
+          <div class="page_text">
+            <p><b>Belarussian State University - 2012</b></p>
+            <p>Сhemical Faculty. Drug technology</p>
+            <p><b>RS School - 2021</b></p>
+            <p>JS/Front-End Course</p>
+          </div>
+        </section>
+        <section class="page_section" id="my_projects">
+          <h2 class="page_sub-title">My Projects</h2>
+          <div class="page_text projects">
+            <div>
+              <a
+                href="https://rolling-scopes-school.github.io/kislajasja-JSFEPRESCHOOL/vertical-slider/"
+                target="_blank"
+                ><img
+                  src="assets/vertical_slider.JPG"
+                  alt="Vertical Slider"
+                  class="project_img"
+                />
+                <div class="project_description">
+                  <h3>Vertical Slider</h3>
+                  <p>Technologies: HTML, CSS, JS</p>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://rolling-scopes-school.github.io/kislajasja-JSFEPRESCHOOL/museum/"
+                target="_blank"
+                ><img
+                  src="assets/museum.JPG"
+                  alt="Museum"
+                  class="project_img"
+                />
+                <div class="project_description">
+                  <h3>Museum</h3>
+                  <p>Technologies: HTML, CSS</p>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://rolling-scopes-school.github.io/kislajasja-JSFEPRESCHOOL/whack-a-mole/"
+                target="_blank"
+                ><img
+                  src="assets/whack_a_mole.JPG"
+                  alt="Whack A Mole"
+                  class="project_img"
+                />
+                <div class="project_description">
+                  <h3>Whack-A-Mole</h3>
+                  <p>Technologies: HTML, CSS, JS</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="page_section" id="code_experience">
+          <h2 class="page_sub-title">Code Experience</h2>
+          <div class="page_text">
+            <div class="code_experience">
+              <a
+                href="https://www.codewars.com/users/kislajasja"
+                target="_blank"
+              >
+                <img
+                  src="assets/logo.svg"
+                  alt="Codewars account"
+                  class="codewars"
+                />
+              </a>
+              <div><span>Codewars Account</span></div>
+            </div>
+            <pre><code class="js">
+        function getBitsCount(n) {
+          let result = 0;
+          while (n !== 0) {
+            if (n & 1 === 1) {
+              result++;
+            }
+            n >>= 1;
+          }
+          return result;
+        };
+              
+        function sortByBit(arr) {
+          return arr.sort((a, b) => {
+            const an = getBitsCount(a);
+            const bn = getBitsCount(b);
+            return an === bn ? a - b : an - bn;
+          });
+        };
+            </code></pre>
+          </div>
+        </section>
+        <section class="page_section page_section_5">
+          <h2 class="page_sub-title" id="languages">Languages</h2>
+          <div class="page_text">
+            <ul>
+              <li><b>Engish</b> - Pre-Intermediate (A2)</li>
+              <li><b>Russian</b> - Native</li>
+            </ul>
+          </div>
+        </section>
+        <section class="page_section">
+          <h2 class="page_sub-title" id="soft_skills">Soft Skills</h2>
+          <div class="page_text">
+            <ul>
+              <li><b>Sociability</b></li>
+              <li><b>Purposefulness</b></li>
+              <li><b>Positive thinking</b></li>
+            </ul>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <ul class="footer_contacts">
+          <li>
+            <a href="https://github.com/kislajasja" target="_blank">
+              <img
+                src="assets/Octicons-mark-github.svg"
+                alt="Github account"
+                class="github"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="https://rs.school/js/" target="_blank">
+              <img src="assets/rs_school_js.svg" alt="Logo" class="logo" />
+            </a>
+          </li>
+          <li>Minsk, Belarus</li>
+          <li>2022</li>
+        </ul>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
