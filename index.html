@@ -76,10 +76,12 @@
           <h2 class="page_sub-title">Summary</h2>
           <details class="page_text">
             <summary>
-              I am new in software development yet, but I really want to become
-              a software engineer. I started learning JavaScript just last year and I
-              really like. I was a chemist in the past, but I realized that I
-              want to try myself in IT.
+              I am a new comer in software development yet, but I really want to
+              become a software engineer. I was a chemist in the past, but I
+              realized that I want to do my best in IT. I started learning
+              JavaScript just last year and I really liked it. I finished RSS
+              precourse and now I have solid knowledge of JS basics. You can
+              find my pet projects on GitHub (@kislajasja).
             </summary>
           </details>
         </section>
@@ -99,7 +101,11 @@
             <p><b>Belarussian State University - 2012</b></p>
             <p>Сhemical Faculty. Drug technology</p>
             <p><b>RS School - 2021</b></p>
-            <p>JS/Front-End Course</p>
+            <p>JS/Front-End Course. Stage 0</p>
+            <p><b>RS School - 2022</b></p>
+            <p>JS/Front-End Course. Stage 0</p>
+            <p><b>RS School - 2022</b></p>
+            <p>JS/Front-End Course. Stage 1 (in progress)</p>
           </div>
         </section>
         <section class="page_section" id="my_projects">
@@ -122,16 +128,16 @@
             </div>
             <div>
               <a
-                href="https://rolling-scopes-school.github.io/kislajasja-JSFEPRESCHOOL/museum/"
+                href="https://rolling-scopes-school.github.io/kislajasja-JSFEPRESCHOOL/portfolio/"
                 target="_blank"
                 ><img
-                  src="assets/museum.JPG"
-                  alt="Museum"
+                  src="assets/portfolio.JPG"
+                  alt="Portfolio"
                   class="project_img"
                 />
                 <div class="project_description">
-                  <h3>Museum</h3>
-                  <p>Technologies: HTML, CSS</p>
+                  <h3>Portfolio</h3>
+                  <p>Technologies: HTML, CSS, JS</p>
                 </div>
               </a>
             </div>
@@ -168,25 +174,28 @@
               </a>
               <div><span>Codewars Account</span></div>
             </div>
-            <pre><code class="js">
-        function getBitsCount(n) {
-          let result = 0;
-          while (n !== 0) {
-            if (n & 1 === 1) {
-              result++;
-            }
-            n >>= 1;
-          }
-          return result;
-        };
+            <pre class="code-example"><code class="js">     
+              class Node {
+                constructor(value, left = null, right = null){
+                  this.value = value;
+                  this.left = left;
+                  this.right = right;
+                }
+              }
               
-        function sortByBit(arr) {
-          return arr.sort((a, b) => {
-            const an = getBitsCount(a);
-            const bn = getBitsCount(b);
-            return an === bn ? a - b : an - bn;
-          });
-        };
+              const isBST = node => {
+                let items = [];
+                traverse(node, items);
+                return JSON.stringify(items) === JSON.stringify(items.slice().sort((a,b) => a - b))||
+                       JSON.stringify(items) === JSON.stringify(items.slice().sort((a,b) => b - a))
+              };
+              
+              function traverse(node, items){
+                if(!node) return;
+                traverse(node.left, items)
+                items.push(node.value)
+                traverse(node.right, items)
+              }
             </code></pre>
           </div>
         </section>
