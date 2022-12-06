@@ -48,7 +48,7 @@ JavaScript-functions
 
 ## Languages
 
-English Level A2
+English Level B1
 
 ## Soft skills
 
